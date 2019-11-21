@@ -20,9 +20,19 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "plugin:prettier/recommended"
+      "plugin:prettier/recommended",
+      "eslint:recommended"
     ]
   },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "ecmaVersion": 8,
+      "experimentalObjectRestSpread": true
+    },
+    "sourceType": "module"
+  },
+  "parser": "babel-eslint",
   "prettier": {
     "printWidth": 90,
     "bracketSpacing": false,
@@ -56,6 +66,7 @@
     ]
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "dotenv": "^8.2.0",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.7.0",

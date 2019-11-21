@@ -8,10 +8,13 @@
   },
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "ecmaVersion": 8,
+      "experimentalObjectRestSpread": true
     },
     "sourceType": "module"
   },
+  "parser": "babel-eslint",
   "plugins": ["react"],
   "rules": {
     "no-const-assign": "warn",
